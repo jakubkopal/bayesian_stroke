@@ -11,7 +11,7 @@ Stroke is the leading cause of long-term disability worldwide. Incurred brain da
 </div>
 
 
-<c>![Figure 5](https://github.com/jakubkopal/bayesian_stroke/blob/main/figures/Fig5_diff_v3.pdf)</c>
+<c>![Figure 5](https://github.com/jakubkopal/bayesian_stroke/blob/main/figures/Fig5_diff_v3.png)</c>
 
 
 Figure 1
