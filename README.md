@@ -1,7 +1,7 @@
 # Code supplement to the manuscript: Bayesian modeling disentangles language versus executive control disruption in stroke
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 [![DOI](https://img.shields.io/badge/DOI-10.1101%2F862615-informational
-)]([https://doi.org/10.1101/2023.04.17.537199](https://doi.org/10.1101/2023.04.17.537199))
+)]([https://doi.org/10.1093/braincomms/fcae129](https://doi.org/10.1093/braincomms/fcae129))
 
 This repository contains the code used to process and analyse the data presented in the "Bayesian modeling disentangles language versus executive control disruption in stroke" manuscript. In addition, the repository contains published figures.
 
@@ -14,7 +14,7 @@ Stroke is the leading cause of long-term disability worldwide. Incurred brain da
 <c>![Figure 5](https://github.com/jakubkopal/bayesian_stroke/blob/main/figures/Fig5_diff_v3.png)</c>
 
 
-Figure 1
+Figure 5
 
 **Distinct associations of lesion atoms and cognitive factors disentangle language and executive deficits.**
 
@@ -25,11 +25,11 @@ Results for the four-factor solution. (a) Lesion-deficit associations for the di
 
 
 ## Resources and Scripts
-CNV-specific asymmetry patterns are saved in the `data` folder. All figures used in the articles are in the `figures` folder. Findings from the article are based on the analysis scripts in the `scripts` folder.
+All figures used in the articles are in the `figures` folder. Findings from the article are based on the analysis scripts in the `scripts` folder.
 
-1.   `scripts/extract_asymmetry_pattern.py` is an example of using Linear discriminant to isolate CNV-specific asymmetry patterns from raw anatomical data. Bootstraping is implemented to increase robustness.
-2.   `scripts/analyze_single_CNV.py` is an analysis script to examine the asymmetry patterns of each CNV separately.
-3.   `scripts/analyze_multiple_CNV.m` uses multi-class LDA to highlight similarities and differences among asymmetry patterns of 8 selected CNVs.
-4.   `scripts/planum_temporale_analysis.py` is an analysis script to investigate CNV effects on planum temporale.
-5.   `scripts/neurosynth_analysis.py` interrogates the NeuroSynth database to functionally annotate derived asymmetry patterns.
-6.   `scripts/genetics_asymmtry.py` plots the annotation of SNPs and genes associated with planum temporale asymmetry in GWAS Catalogue.
+1.   `scripts/factor_decomposition.ipynb` uses Factor analysis to decompose behavioral inputs to latent factor variables.
+2.   `scripts/MIMO_estimation.ipynb` is an example of a Bayesian hierarchical model with multiple inputs and multiple outputs (MIMO model).
+3.   `scripts/MIMO_comparison.ipynb` is an analysis script to examine the differences and similarities between MIMO model outputs.
+4.   `scripts/MISO_estimation.ipynb` is an example of a Bayesian hierarchical model with multiple inputs and a single output (MISO model).
+5.   `scripts/MISO_comparison.ipynb` is an analysis script to examine the differences and similarities between MISO model outputs.
+6.   `scripts/language_networks.ipynb` compares extracted maps of brain-wide effect sizes with an established language network.
